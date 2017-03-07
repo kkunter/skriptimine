@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Sisestage faili nimi: "
+read nimi
+if [ -f $nimi ]
+  then
+  echo "Fail juba eksisteerib"
+  exit 1
+else
+  echo "#!/bin/bash" >> $nimi
+  echo "#" >> $nimi
+  echo "echo Tere, Ambaal" >> $nimi
+  echo "#" >> $nimi
+	if [ -x $nimi ]
+ 	then
+ 	echo "See fail on juba jooksutatav ./fail commandi abil"
+	else
+ 	echo "Kas teeme Teie FAILI jooksutavaks failiks?(Y/N)"
+	read ans
+	fi
+  if [ $ans = "Y" ]
+  then
+  `echo chmod +x $nimi`
+  `echo ./$nimi`
+
+  fi
+
+fi
