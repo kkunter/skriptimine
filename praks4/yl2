@@ -25,11 +25,11 @@ echo "Pindala = $s"
 # skripti algus
 #
 echo
-echo -n "Sisesta a kylje vaartus: "
+echo "Sisesta a kylje vaartus: "
 read a
-echo -n "Sisesta b kylje vaartus: "
+echo "Sisesta b kylje vaartus: "
 read b
-echo -n "Sisesta c kylje vaartus: "
+echo "Sisesta c kylje vaartus: "
 read c
 #
 # arvutame
