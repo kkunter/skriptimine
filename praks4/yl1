@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# hypotenuusi arvutamine
+#
+# 
+#
+echo
+echo -n "Sisesta a kylje vaartus: "
+read a
+echo -n "Sisesta b kylje vaartus: "
+read b
+#
+# arvutame
+#
+a_ruut=`echo "scale=2;($a^2)" | bc`	# a ruudus
+b_ruut=`echo "scale=2;($b^2)" | bc`	# b ruudus
+c_ruut=`echo "scale=2;($a_ruut+$b_ruut)" | bc`	#c ruudus on a ruudus ja b ruudus summa
+c=`echo "scale=2;sqrt ($c_ruut)" | bc` # bc arvutab ruutjuurt
+echo "c = $c"
+#
+#skript end
+
