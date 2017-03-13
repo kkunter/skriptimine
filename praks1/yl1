@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -f yl2 ]
+then
+	echo "Sul on see FAIL JUBA OLEMAS"
+else
+	`echo "#!/bin/bash" >> yl2`
+	`echo "#" >> yl2`
+	`echo "#" >> yl2`
+	`echo chmod +x yl2`
+	`echo "tar -cvjf home.tar.bz2 /home/" >> yl2`
+	`echo ./yl2`
+fi
