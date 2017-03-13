@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo -n "Sisestage kuu number[1-12]:"
+read kuu
+
+case $kuu in
+ 1) echo '1. kuu on Jaanuar';;
+ 2) echo '2. kuu on Veebruar';;
+ 3) echo '3. kuu on Märts';;
+ 4) echo '4. kuu on Aprill';;
+ 5) echo '5. kuu on Mai';;
+ 6) echo '6. kuu on Juuni';;
+ 7) echo '7. kuu on Juuli';;
+ 8) echo '8. kuu on August';;
+ 9) echo '9. kuu on September';;
+ 10) echo '10. kuu on Oktoober';;
+ 11) echo '11. kuu on November';;
+ 12) echo '12. kuu on Detsember';;
+esac
+sleep 3
+
+echo 'Faili lõpp'
