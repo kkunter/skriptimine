@@ -1,0 +1,11 @@
+#!/bin/bash
+summa=0
+echo "Programm, mis liidab paaris arvud"
+for((p=1; p<=10; p++))
+do
+arvutamine=$(($p % 2))
+	if [ $arvutamine -eq 0 ]; then
+	summa=$(($summa + $p))
+	fi
+done
+echo "Arvude 1..10 summa on: $summa"
